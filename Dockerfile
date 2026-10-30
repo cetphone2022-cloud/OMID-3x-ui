@@ -83,6 +83,5 @@ ENV XUI_DB_DSN=""
 # Generate subscription links from the public HTTPS host without exposing private subPort=2096.
 ENV XUI_SUB_PUBLIC_HTTPS="true"
 EXPOSE 2053
-VOLUME [ "/etc/x-ui" ]
 CMD [ "./x-ui" ]
 ENTRYPOINT [ "/app/DockerEntrypoint.sh" ]
